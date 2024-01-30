@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16EE7275D6C7F71DF8E78D9F /* Pods_sqLite_Training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4DF732238E456F10C35B50 /* Pods_sqLite_Training.framework */; };
 		E0F984052B67BEEA00AC76A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F984042B67BEEA00AC76A1 /* AppDelegate.swift */; };
 		E0F984072B67BEEA00AC76A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F984062B67BEEA00AC76A1 /* SceneDelegate.swift */; };
 		E0F984092B67BEEA00AC76A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F984082B67BEEA00AC76A1 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74BDA0CA545C3501489C2847 /* Pods-sqLite Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sqLite Training.debug.xcconfig"; path = "Target Support Files/Pods-sqLite Training/Pods-sqLite Training.debug.xcconfig"; sourceTree = "<group>"; };
+		BBFCEF84BE7387A8F3AAFF0F /* Pods-sqLite Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sqLite Training.release.xcconfig"; path = "Target Support Files/Pods-sqLite Training/Pods-sqLite Training.release.xcconfig"; sourceTree = "<group>"; };
+		DD4DF732238E456F10C35B50 /* Pods_sqLite_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sqLite_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F984012B67BEEA00AC76A1 /* sqLite Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sqLite Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F984042B67BEEA00AC76A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F984062B67BEEA00AC76A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EE7275D6C7F71DF8E78D9F /* Pods_sqLite_Training.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35644CFC6BFED0D8CF104523 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4DF732238E456F10C35B50 /* Pods_sqLite_Training.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C8018469CA4FFAFB77245B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74BDA0CA545C3501489C2847 /* Pods-sqLite Training.debug.xcconfig */,
+				BBFCEF84BE7387A8F3AAFF0F /* Pods-sqLite Training.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E0F983F82B67BEEA00AC76A1 = {
 			isa = PBXGroup;
 			children = (
 				E0F984032B67BEEA00AC76A1 /* sqLite Training */,
 				E0F984022B67BEEA00AC76A1 /* Products */,
+				3C8018469CA4FFAFB77245B6 /* Pods */,
+				35644CFC6BFED0D8CF104523 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F984152B67BEEB00AC76A1 /* Build configuration list for PBXNativeTarget "sqLite Training" */;
 			buildPhases = (
+				55189AE1DEB9A02BF05B85A5 /* [CP] Check Pods Manifest.lock */,
 				E0F983FD2B67BEEA00AC76A1 /* Sources */,
 				E0F983FE2B67BEEA00AC76A1 /* Frameworks */,
 				E0F983FF2B67BEEA00AC76A1 /* Resources */,
+				4F32A78EAB4F921882736AD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F32A78EAB4F921882736AD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sqLite Training/Pods-sqLite Training-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sqLite Training/Pods-sqLite Training-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sqLite Training/Pods-sqLite Training-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55189AE1DEB9A02BF05B85A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sqLite Training-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0F983FD2B67BEEA00AC76A1 /* Sources */ = {
@@ -287,12 +355,14 @@
 		};
 		E0F984162B67BEEB00AC76A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74BDA0CA545C3501489C2847 /* Pods-sqLite Training.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NA979M4P72;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sqLite Training/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +385,14 @@
 		};
 		E0F984172B67BEEB00AC76A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFCEF84BE7387A8F3AAFF0F /* Pods-sqLite Training.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NA979M4P72;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sqLite Training/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
